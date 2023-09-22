@@ -39,7 +39,7 @@ export default function SearchBar() {
 				{items.slice(0,8).map((item) => {
 					return (
 						<Link href={`/movies/${item.id}`} className="search_item" key={item.id}>
-							<img src={`https://image.tmdb.org/t/p/original/${item.poster_path}`} className="search_img"/>
+							<img src={`https://image.tmdb.org/t/p/original/${item.poster_path}`} className="search_img" style={{width: '50px', height: '50px'}}/>
 							<p>{item.title}</p>
 						</Link>
 					);
